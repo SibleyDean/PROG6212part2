@@ -1,0 +1,146 @@
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f4f6f9;
+    color: #222;
+    margin: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Header & Navbar */
+.site-header {
+    background: #004aad;
+    padding: 15px 0;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+    .site-header .logo {
+        margin: 0;
+        font-size: 1.4rem;
+    }
+
+.navbar {
+    margin-top: 8px;
+}
+
+    .navbar a {
+        color: #fff;
+        margin-right: 15px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    background: #eee;
+    color: #444;
+}
+
+/* Cards */
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* Forms */
+.form-grid label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.form-grid input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Buttons */
+button, .btn-primary, .btn-secondary, .btn-danger {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background: #004aad;
+    color: #fff;
+}
+
+    .btn-primary:hover {
+        background: #00337f;
+    }
+
+.btn-secondary {
+    background: #f0f0f0;
+    color: #333;
+}
+
+    .btn-secondary:hover {
+        background: #e0e0e0;
+    }
+
+.btn-danger {
+    background: #c82333;
+    color: #fff;
+}
+
+    .btn-danger:hover {
+        background: #a71d2a;
+    }
+
+.button-row {
+    margin-top: 10px;
+}
+
+/* Tables */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+    .styled-table th,
+    .styled-table td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+
+    .styled-table th {
+        background: #f0f0f0;
+    }
+
+/* Status list */
+.status-list li {
+    margin-bottom: 8px;
+    padding-left: 8px;
+}
+
+/* Info messages */
+.info {
+    background: #e9f7ef;
+    padding: 10px;
+    border-left: 4px solid #28a745;
+    margin-top: 15px;
+}

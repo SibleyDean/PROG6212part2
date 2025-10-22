@@ -1,0 +1,31 @@
+﻿@model CMCS.Mvc.Models.Lecturer
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Lecturer Details";
+}
+
+<h2>Lecturer Details</h2>
+
+<section class="card">
+    <dl class="details-grid">
+        <dt>ID:</dt>
+        <dd>@Model.Id</dd>
+
+        <dt>Name:</dt>
+        <dd>@Model.Name</dd>
+
+        <dt>Email:</dt>
+        <dd>@Model.Email</dd>
+
+        <dt>Department:</dt>
+        <dd>@Model.Department</dd>
+
+        <dt>Phone:</dt>
+        <dd>@Model.Phone</dd>
+    </dl>
+
+    <div class="button-row">
+        <a href="@Url.Action("Edit", new { id = Model.Id })" class="btn-primary">Edit</a>
+        <a href="@Url.Action("Index")" class="btn-secondary">Back to List</a>
+    </div>
+</section>

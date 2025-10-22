@@ -1,0 +1,61 @@
+﻿@model CMCS.Mvc.Models.Claim
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Review Claim";
+}
+
+<h2>Review Claim</h2>
+
+<section class="card">
+    <div class="claim-details">
+        <h3>@Model.Title</h3>
+
+        <dl class="details-grid">
+            <dt>Lecturer Name:</dt>
+            <dd><strong>@Model.LecturerName</strong></dd>
+
+            <dt>Description:</dt>
+            <dd>@Model.Description</dd>
+
+            <dt>Hours Worked:</dt>
+            <dd>@Model.Hours</dd>
+
+            <dt>Hourly Rate:</dt>
+            <dd>@Model.Rate.ToString("C")</dd>
+
+            <dt>Total Amount:</dt>
+            <dd><strong>@Model.Amount.ToString("C")</strong></dd>
+
+            <dt>Current Status:</dt>
+            <dd><strong>@Model.Status</strong></dd>
+
+            @if (!string.IsNullOrEmpty(Model.FilePath))
+            {
+                <dt>Supporting Document:</dt>
+                <dd>
+                    <a href="@Url.Action("Download", "Claims", new { id = Model.Id })" class="btn-secondary" target="_blank">
+                        View Document
+                    </a>
+                </dd>
+            }
+        </dl>
+    </div>
+
+    <div class="button-row" style="margin-top: 2rem; border-top: 1px solid #eee; padding-top: 1rem;">
+        <form method="post" action="@Url.Action("Approve", "AcademicManager", new { id = Model.Id })" style="display: inline;">
+            @Html.AntiForgeryToken()
+            <button type="submit" class="btn-primary" onclick="return confirm('Are you sure you want to APPROVE this claim?')">
+                Approve Claim
+            </button>
+        </form>
+
+        <form method="post" action="@Url.Action("Reject", "AcademicManager", new { id = Model.Id })" style="display: inline;">
+            @Html.AntiForgeryToken()
+            <button type="submit" class="btn-danger" onclick="return confirm('Are you sure you want to REJECT this claim?')">
+                Reject Claim
+            </button>
+        </form>
+
+        <a href="@Url.Action("Index")" class="btn-secondary">Back to Pending Claims</a>
+    </div>
+</section>

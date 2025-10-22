@@ -1,0 +1,43 @@
+﻿@model CMCS.Mvc.Models.Claim
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Delete Claim";
+}
+
+<h2>Delete Claim</h2>
+
+<section class="card">
+    <h3>Are you sure you want to delete this claim?</h3>
+
+    <dl class="details-grid">
+        <dt>Lecturer Name:</dt>
+        <dd>@Model.LecturerName</dd>
+
+        <dt>Title:</dt>
+        <dd>@Model.Title</dd>
+
+        <dt>Description:</dt>
+        <dd>@(string.IsNullOrEmpty(Model.Description) ? "No description provided" : Model.Description)</dd>
+
+        <dt>Hours Worked:</dt>
+        <dd>@Model.Hours</dd>
+
+        <dt>Hourly Rate:</dt>
+        <dd>@Model.Rate.ToString("C")</dd>
+
+        <dt>Total Amount:</dt>
+        <dd><strong>@Model.Amount.ToString("C")</strong></dd>
+
+        <dt>Status:</dt>
+        <dd>@Model.Status</dd>
+    </dl>
+
+    <form asp-action="Delete" method="post">
+        @Html.AntiForgeryToken()
+        <input type="hidden" name="id" value="@Model.Id" />
+        <div class="button-row">
+            <button type="submit" class="btn-danger">Delete Claim</button>
+            <a href="@Url.Action("Index")" class="btn-secondary">Cancel</a>
+        </div>
+    </form>
+</section>

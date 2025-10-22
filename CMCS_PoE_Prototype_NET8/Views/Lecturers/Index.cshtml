@@ -1,0 +1,50 @@
+﻿@model List<CMCS.Mvc.Models.Lecturer>
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Lecturers";
+}
+
+<h2>Lecturers</h2>
+
+<section class="card">
+    <div class="button-row">
+        <a href="@Url.Action("Create")" class="btn-primary">Add New Lecturer</a>
+    </div>
+
+    @if (Model.Any())
+    {
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Department</th>
+                    <th>Phone</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var lecturer in Model)
+                {
+                    <tr>
+                        <td><strong>@lecturer.Id</strong></td>
+                        <td><strong>@(lecturer.Name ?? "NULL")</strong></td>
+                        <td><strong>@(lecturer.Email ?? "NULL")</strong></td>
+                        <td><strong>@(lecturer.Department ?? "NULL")</strong></td>
+                        <td><strong>@(lecturer.Phone ?? "NULL")</strong></td>
+                        <td>
+                            <a href="@Url.Action("Details", new { id = lecturer.Id })" class="btn-secondary">Details</a>
+                            <a href="@Url.Action("Edit", new { id = lecturer.Id })" class="btn-primary">Edit</a>
+                            <a href="@Url.Action("Delete", new { id = lecturer.Id })" class="btn-danger">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No lecturers found. <a href="@Url.Action("Create")">Create the first lecturer</a>.</p>
+    }
+</section>

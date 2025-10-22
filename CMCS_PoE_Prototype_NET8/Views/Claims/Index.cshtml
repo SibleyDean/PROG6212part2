@@ -1,0 +1,74 @@
+﻿@model List<CMCS.Mvc.Models.Claim>
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "All Claims";
+}
+
+<h2>All Claims</h2>
+
+<section class="card">
+    <div class="button-row">
+        <a href="@Url.Action("Create")" class="btn-primary">Submit New Claim</a>
+    </div>
+
+    @if (Model.Any())
+    {
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Lecturer</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Hours</th>
+                    <th>Rate</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var claim in Model)
+                {
+                    <tr>
+                        <td><strong>@claim.LecturerName</strong></td>
+                        <td><strong>@claim.Title</strong></td>
+                        <td>@(string.IsNullOrEmpty(claim.Description) ? "No description" : claim.Description)</td>
+                        <td>@claim.Hours</td>
+                        <td>@claim.Rate.ToString("C")</td>
+                        <td><strong>@claim.Amount.ToString("C")</strong></td>
+                        <td>
+                            <span style="padding: 4px 8px; border-radius: 4px;
+                                          background-color: @(claim.Status == "Pending" ? "#fff3cd" :
+                                                                                    claim.Status == "Approved" ? "#d1edff" :
+                                                                                    claim.Status == "Rejected" ? "#f8d7da" : "#e2e3e5");
+                                  color: @(claim.Status == "Pending" ? "#856404" :
+                                                                   claim.Status == "Approved" ? "#004085" :
+                                                                   claim.Status == "Rejected" ? "#721c24" : "#383d41");">
+                        @claim.Status
+                    </span>
+                </td>
+                <td>
+                    <div style="display: flex; flex-direction: column; gap: 5px; align-items: flex-start;">
+                        <div style="display: flex; gap: 5px; flex-wrap: wrap;">
+                            <a href="@Url.Action("Details", new { id = claim.Id })" class="btn-secondary" style="padding: 4px 8px; font-size: 0.9rem;">Details</a>
+                            <a href="@Url.Action("Edit", new { id = claim.Id })" class="btn-primary" style="padding: 4px 8px; font-size: 0.9rem;">Edit</a>
+                            <a href="@Url.Action("Delete", new { id = claim.Id })" class="btn-danger" style="padding: 4px 8px; font-size: 0.9rem;">Delete</a>
+                        </div>
+                        @if (!string.IsNullOrEmpty(claim.FilePath))
+                                {
+                                    <a href="@Url.Action("Download", new { id = claim.Id })" class="btn-primary" style="padding: 4px 8px; font-size: 0.9rem; align-self: stretch; text-align: center;">
+                                        Download Document
+                                    </a>
+                                }
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No claims found. <a href="@Url.Action("Create")">Submit the first claim</a>.</p>
+    }
+</section>

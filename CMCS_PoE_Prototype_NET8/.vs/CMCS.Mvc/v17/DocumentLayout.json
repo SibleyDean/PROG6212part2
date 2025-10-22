@@ -1,0 +1,141 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Documents\\CMCS_PoE_Prototype_NET8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F7D33900-FA19-4549-8A6A-B762988D19FB}|..\\CMCS.Mvc.Tests.5\\CMCS.Mvc.Tests.5.csproj|c:\\users\\lab_services_student\\documents\\cmcs.mvc.tests.5\\comprehensivetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7D33900-FA19-4549-8A6A-B762988D19FB}|..\\CMCS.Mvc.Tests.5\\CMCS.Mvc.Tests.5.csproj|c:\\users\\lab_services_student\\documents\\cmcs.mvc.tests.5\\cmcs.mvc.tests.5.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lab_services_student\\Documents\\CMCS.Mvc.Tests.4\\UnitTests\\ClaimsControllerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lab_services_student\\Documents\\CMCS.Mvc.Tests.4\\IntegrationTests\\BasicFlowTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lab_services_student\\Documents\\CMCS.Mvc.Tests.4\\UnitTests\\AcademicManagerControllerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lab_services_student\\Documents\\CMCS.Mvc.Tests.4\\UnitTests\\LecturersControllerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lab_services_student\\Documents\\CMCS.Mvc.Tests.4\\UnitTests\\InMemoryStoreTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lab_services_student\\Documents\\CMCS.Mvc.Tests.4\\UnitTest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CMCS.Mvc.Tests.5.csproj",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\CMCS.Mvc.Tests.5\\CMCS.Mvc.Tests.5.csproj",
+              "RelativeDocumentMoniker": "..\\CMCS.Mvc.Tests.5\\CMCS.Mvc.Tests.5.csproj",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\CMCS.Mvc.Tests.5\\CMCS.Mvc.Tests.5.csproj",
+              "RelativeToolTip": "..\\CMCS.Mvc.Tests.5\\CMCS.Mvc.Tests.5.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-22T15:12:27.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ComprehensiveTests.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\CMCS.Mvc.Tests.5\\ComprehensiveTests.cs",
+              "RelativeDocumentMoniker": "..\\CMCS.Mvc.Tests.5\\ComprehensiveTests.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\CMCS.Mvc.Tests.5\\ComprehensiveTests.cs",
+              "RelativeToolTip": "..\\CMCS.Mvc.Tests.5\\ComprehensiveTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T14:50:55.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BasicFlowTests.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\CMCS.Mvc.Tests.4\\IntegrationTests\\BasicFlowTests.cs",
+              "RelativeDocumentMoniker": "..\\CMCS.Mvc.Tests.4\\IntegrationTests\\BasicFlowTests.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\CMCS.Mvc.Tests.4\\IntegrationTests\\BasicFlowTests.cs",
+              "RelativeToolTip": "..\\CMCS.Mvc.Tests.4\\IntegrationTests\\BasicFlowTests.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T12:25:32.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AcademicManagerControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\CMCS.Mvc.Tests.4\\UnitTests\\AcademicManagerControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\CMCS.Mvc.Tests.4\\UnitTests\\AcademicManagerControllerTests.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\CMCS.Mvc.Tests.4\\UnitTests\\AcademicManagerControllerTests.cs",
+              "RelativeToolTip": "..\\CMCS.Mvc.Tests.4\\UnitTests\\AcademicManagerControllerTests.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAQwGMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T12:24:37.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LecturersControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\CMCS.Mvc.Tests.4\\UnitTests\\LecturersControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\CMCS.Mvc.Tests.4\\UnitTests\\LecturersControllerTests.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\CMCS.Mvc.Tests.4\\UnitTests\\LecturersControllerTests.cs",
+              "RelativeToolTip": "..\\CMCS.Mvc.Tests.4\\UnitTests\\LecturersControllerTests.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAQwHwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T12:23:48.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClaimsControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\CMCS.Mvc.Tests.4\\UnitTests\\ClaimsControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\CMCS.Mvc.Tests.4\\UnitTests\\ClaimsControllerTests.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\CMCS.Mvc.Tests.4\\UnitTests\\ClaimsControllerTests.cs",
+              "RelativeToolTip": "..\\CMCS.Mvc.Tests.4\\UnitTests\\ClaimsControllerTests.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAQwIgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T12:23:26.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InMemoryStoreTests.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\CMCS.Mvc.Tests.4\\UnitTests\\InMemoryStoreTests.cs",
+              "RelativeDocumentMoniker": "..\\CMCS.Mvc.Tests.4\\UnitTests\\InMemoryStoreTests.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\CMCS.Mvc.Tests.4\\UnitTests\\InMemoryStoreTests.cs",
+              "RelativeToolTip": "..\\CMCS.Mvc.Tests.4\\UnitTests\\InMemoryStoreTests.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAIBJwHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T12:22:41.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\CMCS.Mvc.Tests.4\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\CMCS.Mvc.Tests.4\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\CMCS.Mvc.Tests.4\\UnitTest1.cs",
+              "RelativeToolTip": "..\\CMCS.Mvc.Tests.4\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T12:16:22.637Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

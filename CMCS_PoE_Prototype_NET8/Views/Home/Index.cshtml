@@ -1,0 +1,26 @@
+@{
+    Layout = "_Layout";
+}
+
+<h2>Welcome</h2>
+<p>This is the Contract Monthly Claim System (CMCS).</p>
+
+<section class="card">
+    <h3>Quick Claim Submission</h3>
+    <form method="post" action="/Home/SubmitClaim" class="form-grid">
+        <label>
+            Name
+            <input name="name" placeholder="Lecturer name" />
+        </label>
+        <label>
+            Month
+            <input name="month" placeholder="e.g. August 2025" />
+        </label>
+        <button type="submit" class="btn-primary">Submit Claim</button>
+    </form>
+    @if (ViewBag.Message != null)
+    {
+        <p class="info">@ViewBag.Message</p>
+        <p><strong>Submitted by:</strong> @ViewBag.Name for @ViewBag.Month</p>
+    }
+</section>

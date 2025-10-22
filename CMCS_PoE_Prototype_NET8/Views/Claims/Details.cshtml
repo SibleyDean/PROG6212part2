@@ -1,0 +1,60 @@
+﻿@model CMCS.Mvc.Models.Claim
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Claim Details";
+}
+
+<h2>Claim Details</h2>
+
+<section class="card">
+    <dl class="details-grid">
+        <dt>ID:</dt>
+        <dd>@Model.Id</dd>
+
+        <dt>Lecturer Name:</dt>
+        <dd>@Model.LecturerName</dd>
+
+        <dt>Title:</dt>
+        <dd>@Model.Title</dd>
+
+        <dt>Description:</dt>
+        <dd>@(string.IsNullOrEmpty(Model.Description) ? "No description provided" : Model.Description)</dd>
+
+        <dt>Hours Worked:</dt>
+        <dd>@Model.Hours</dd>
+
+        <dt>Hourly Rate:</dt>
+        <dd>@Model.Rate.ToString("C")</dd>
+
+        <dt>Total Amount:</dt>
+        <dd><strong>@Model.Amount.ToString("C")</strong></dd>
+
+        <dt>Status:</dt>
+        <dd>
+            <span style="padding: 4px 8px; border-radius: 4px;
+                  background-color: @(Model.Status == "Pending" ? "#fff3cd" :
+                                                        Model.Status == "Approved" ? "#d1edff" :
+                                                        Model.Status == "Rejected" ? "#f8d7da" : "#e2e3e5");
+                  color: @(Model.Status == "Pending" ? "#856404" :
+                                           Model.Status == "Approved" ? "#004085" :
+                                           Model.Status == "Rejected" ? "#721c24" : "#383d41");">
+                @Model.Status
+            </span>
+        </dd>
+
+        @if (!string.IsNullOrEmpty(Model.FilePath))
+        {
+            <dt>Supporting Document:</dt>
+            <dd>
+                <a href="@Url.Action("Download", new { id = Model.Id })" class="btn-primary" target="_blank">
+                    Download Document
+                </a>
+            </dd>
+        }
+    </dl>
+
+    <div class="button-row">
+        <a href="@Url.Action("Edit", new { id = Model.Id })" class="btn-primary">Edit</a>
+        <a href="@Url.Action("Index")" class="btn-secondary">Back to List</a>
+    </div>
+</section>

@@ -1,0 +1,40 @@
+﻿@model List<CMCS.Mvc.Models.Claim>
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Academic Manager - Pending Claims";
+}
+
+<h2>Academic Manager - Pending Claims</h2>
+
+<section class="card">
+    @if (Model.Any())
+    {
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Claim Title</th>
+                    <th>Lecturer</th>
+                    <th>Amount</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var claim in Model)
+                {
+                    <tr>
+                        <td>@claim.Title</td>
+                        <td>@claim.LecturerName</td>
+                        <td>@claim.Amount.ToString("C")</td>
+                        <td>
+                            <a href="@Url.Action("Review", new { id = claim.Id })" class="btn-primary">Review</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p class="info">No pending claims to review.</p>
+    }
+</section>
